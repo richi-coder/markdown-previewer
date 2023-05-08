@@ -17,5 +17,11 @@ To use the Markdown Previewer, follow these steps:
 
 1. Clone the repository:
 
-   ```bash
+   ```
+   bash
    git clone https://github.com/your-username/markdown-previewer.git
+
+2. Navigate to the project directory:
+
+    ```
+    cd markdown-previewer
