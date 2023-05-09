@@ -7,10 +7,13 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint src --ext js,jsx --report-unused-disable-directives --max-warnings 0",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
-    "marked": "^5.0.1",
+    "gh-pages": "^5.0.0",
+    "html-react-parser": "^3.0.16",
+    "html-to-react": "^1.5.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0"
   },
