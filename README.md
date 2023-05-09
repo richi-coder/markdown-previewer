@@ -43,3 +43,10 @@ To use the Markdown Previewer, follow these steps:
 Type or paste your Markdown text into the input area.
 The preview area will update in real-time to show the rendered HTML output.
 Customize the theme of the preview area by selecting different options from the theme dropdown.
+
+
+## Technologies used
+
+- React JS
+- CSS
+- Marked
