@@ -1,16 +1,35 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useState } from "react";
+import "./index.css";
+import { marked } from "marked";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [output, setOutput] = useState('HTML outputs here!')
+
+
+  const onChange = (e) => {
+    const htmlOutput = marked.parse(e.target.value)
+    setOutput(htmlOutput)
+  };
 
   return (
     <>
-      markdown
+      <div className="w-full h-full flex flex-row flex-wrap justify-between text-lime-300">
+          <textarea
+            onChange={onChange}
+            className='w-full mx-5 max-w-[700px] bg-black'
+            name="input"
+            id="input"
+            cols="30"
+            rows="10"
+            placeholder="Write markdown here!"
+          ></textarea>
+        <div id="output-container" 
+          className="w-full mx-5 max-w-[700px] bg-black">
+          {output}
+        </div>
+      </div>
     </>
-  )
+  );
 }
 
-export default App
+export default App;
